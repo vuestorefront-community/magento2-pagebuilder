@@ -1,96 +1,99 @@
-import { nullComponent } from '../components/nullComponent';
+import { VueConstructor } from 'vue';
+import NullComponent from '../components/NullComponent.vue';
 
 const contentTypesConfig = {
   row: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   column: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   'column-group': {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   image: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   heading: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   text: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   tabs: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   'tab-item': {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   buttons: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   'button-item': {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   block: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   dynamic_block: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   products: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   html: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   divider: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   video: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   map: {
-    configAggregator: nullComponent,
-    component: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
   },
   banner: {
-    configAggregator: nullComponent,
-    component: nullComponent,
-    componentShimmer: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
+    componentShimmer: NullComponent,
   },
   slider: {
-    configAggregator: nullComponent,
-    component: nullComponent,
-    componentShimmer: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
+    componentShimmer: NullComponent,
   },
   // Slide is just a banner wrapped inside a slider
   slide: {
-    configAggregator: nullComponent,
-    component: nullComponent,
-    componentShimmer: nullComponent,
+    configAggregator: NullComponent,
+    component: NullComponent,
+    componentShimmer: NullComponent,
   },
 };
 
 export const getContentTypeConfig = (contentType) => {
-  if (!contentTypesConfig[contentType]) return nullComponent;
+  if (!contentTypesConfig[contentType]) return NullComponent;
 
   return contentTypesConfig[contentType];
 };
 
-export const setContentTypeConfig = (contentType, config) => (contentTypesConfig[contentType] = config);
+export const setContentTypeConfig = (contentType, config) => {
+  contentTypesConfig[contentType] = config;
+};
