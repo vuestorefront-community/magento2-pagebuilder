@@ -48,10 +48,6 @@ If you have any questions about this integration we will be happy to answer them
 
 ## Contributors ✨
 
-### Honorable Mentions
-- [Cyberfuze](https://cyberfuze.com/)
-- [Leonex](https://www.leonex.de/)
-
 Thanks go to these wonderful people 🙌:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
