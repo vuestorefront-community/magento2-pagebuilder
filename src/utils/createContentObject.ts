@@ -1,6 +1,6 @@
 export type ContentObject = {
   contentType: unknown;
-  appearance: string | null;
+  appearance?: string | null;
   children: unknown[];
   configAggregator?: Function;
 };

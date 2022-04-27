@@ -1,4 +1,3 @@
 **/node_modules/**/*
-**/lib/*
-packages/composables/nuxt/plugin.js
-packages/api-client/types/GraphQL.ts
+.eslintrc.js
+_pagebuilder_/**/*

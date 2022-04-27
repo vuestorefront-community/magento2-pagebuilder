@@ -1,6 +1,7 @@
 import { setContentTypeConfig } from './getContentTypeConfig';
+import { ContentObject } from './createContentObject';
 
-const addCustomContentTypes = (contentTypes) => {
+const addCustomContentTypes = (contentTypes: ContentObject[]) => {
   contentTypes.forEach((contentType) => {
     const { component, configAggregator } = contentType;
 
